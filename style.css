@@ -1,0 +1,1244 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Rose', cursive;
+    font-weight: 500;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFFCF6;
+}
+
+.pink {
+    color: #FADDDD;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav {
+    position: absolute;
+    z-index: 9;
+}
+
+nav ul li:hover, #contact-content:hover, #contact-content a:hover {
+    color: #FADDDD;
+    cursor: pointer;
+}
+
+#contact-content {
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+.home nav ul li {
+    padding: 8px 0;
+}
+
+.alt-nav { 
+    position: relative;
+}
+
+#toggle {
+    display: flex;
+    position: absolute;
+}
+
+#toggle:hover {
+    cursor: pointer;
+}
+
+#toggle div {
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home .content {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.home .content .top, .home .content .bottom {
+    flex: 1;
+}
+
+.home .img {
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    height: 250px;
+}
+
+.home .pink-img {
+    background-color: #FADDDD;
+    opacity: 50%;
+}
+
+.home .grey-img {
+    background-color: #C4C4C4;
+}
+
+.home .bottom .line {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    animation: line 1s forwards;
+}
+
+.home .top h1 {
+    z-index: 9;
+    position: relative;
+}
+
+.home h2 {
+    margin-top: 40px;
+    line-height: 35px;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+}
+
+@keyframes line {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.about .img {
+    background: grey;
+}
+
+.about .pink-circle {
+    background-image: url(/assets/circle.png);
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+
+.arrow .line {
+    background: black;
+    width: 3px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: -80px;
+    position: absolute;
+}
+
+.arrow .down {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    margin-top: 75px;
+}
+
+.arrow {
+    margin-left: 35vw;
+}
+
+.eye-see-chch .one .img {
+    background-image: url(/assets/eye-see-chch-pic1.jpg);
+}
+
+.eye-see-chch .two .img {
+    background-image: url(/assets/eye-see-chch-pic2.jpg);
+}
+
+.white-lies .one .img {
+    background-image: url(/assets/white-lies-pic1.jpg);
+}
+
+.white-lies .two .img {
+    background-image: url(/assets/white-lies-pic2.png);
+}
+
+.the-getaway .one .img {
+    background-image: url(/assets/the-getaway-home.jpg);
+}
+
+.the-getaway .two .img {
+    background-image: url(/assets/the-getaway-pic1.jpg);
+}
+
+.the-getaway .three .img {
+    background-image: url(/assets/the-getaway-pic2.jpg);
+}
+
+.the-getaway .four .img {
+    background-image: url(/assets/the-getaway-pic3.jpg);
+}
+
+.the-getaway .five .img {
+    background-image: url(/assets/the-getaway-pic4.jpg);
+}
+
+.eye-see-chch .img, .white-lies .img, .the-getaway .img {
+    background-position: center;
+    background-size: cover;
+}
+
+.one, .two {
+    background-color: black;
+    color: white;
+}
+
+.eye-see-chch main, .white-lies main, .the-getaway main {
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+
+.eye-see-chch section, .white-lies section, .the-getaway section {  
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.colours div {
+    height: 25vh;
+    width: 100%;
+    margin-left: 0;
+}
+
+.slideColours {
+    animation: slideColours 1s forwards;
+}
+
+.eye-see-chch .colours div:nth-child(1) {
+    background-color: #1f1f1f;
+}
+
+.eye-see-chch .colours div:nth-child(2) {
+    background-color: #ce2e4a;
+}
+
+.eye-see-chch .colours div:nth-child(3) {
+    background: #ff5f5f;
+}
+
+.eye-see-chch .colours div:nth-child(4) {
+    background-color: #ffb0b0;
+}
+
+.eye-see-chch .colours div:nth-child(5) {
+    background-color: #FADDDD;
+}
+
+.white-lies .colours div:nth-child(1) {
+    background-color: #0cebe4;
+}
+
+.white-lies .colours div:nth-child(2) {
+    background-color: #1581a8;
+}
+
+.white-lies .colours div:nth-child(3) {
+    background-color: #0e101a;
+}
+
+.the-getaway .colours div:nth-child(1) {
+    background-color: #DCE0E0;
+}
+
+.the-getaway .colours div:nth-child(2) {
+    background-color: #51745C;
+}
+
+.the-getaway .colours div:nth-child(3) {
+    background-color: #000;
+}
+
+.eye-see-chch .three {
+    background-color: #FADDDD;
+}
+
+.eye-see-chch .logo {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.logo-1 {
+    background-image: url(/assets/logo.png);
+	animation: float 5s ease-in-out infinite .8s;
+}
+
+.logo-2 {
+    background-image: url(/assets/eye.png);
+	animation: float 5s ease-in-out infinite 1s;
+}
+
+.logo-3 {
+    background-image: url(/assets/inksmile.png);
+	animation: float 5s ease-in-out infinite 1.3s;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.menu-logos div {
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-logo {
+    background-image: url(/assets/home.png);
+}
+
+.settings-logo {
+    background-image: url(/assets/settingsicon.png);
+}
+
+.profile-logo {
+    background-image: url(/assets/profileicon.png);
+}
+
+.add-logo {
+    background-image: url(/assets/addicon.png);
+}
+
+@keyframes slideColours {
+    from {
+        margin-left: -90vw;
+    }
+    to {
+        margin-left: 0vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .home nav {
+        right: 60px;
+        margin-top: 40px;
+        font-size: 1.4rem;
+    }
+
+    .home .grey-img {
+        right: 0;
+        margin-top: 30px;
+    }    
+
+    .home .pink-img {
+        right: 50px;
+        margin-top: 200px;
+    }
+
+    .home h1 {
+        margin-top: 100px;
+        margin-right: 170px;
+        font-size: 2.5rem;
+    }
+
+    .home h2 {
+        width: 250px;
+        margin-right: 60px;
+        font-size: 1.3rem;
+    }
+
+    .home h4 {
+        margin-left: 30px;
+    }
+
+    .alt-nav {
+        width: 100%;
+        padding: 30px 30px 0px;
+    }
+
+    .alt-nav ul {
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 30px 0 20px;
+        display: none;
+    }
+
+    .alt-nav ul li {
+        margin: 0 auto;
+        line-height: 40px;
+        width: 20%;
+    }
+
+    .alt-nav #toggle {
+        right: 30px;
+        top: 30px;
+        z-index: 9;
+        height: 20px;
+    }
+
+    #contact-content {
+        margin: auto 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        padding: 30px 30px 0;
+        overflow: hidden;
+    }
+
+    .about .img {
+        width: 80vw;
+        height: 50vw;
+        margin: 0 auto;
+    }
+
+    .about .text {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
+    .about .text p {
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+    }
+
+    .about .books {
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        margin-top: 100px;
+    }
+
+    .about .books h3 {
+        font-size: 2.2rem;
+        text-align: right;
+        padding-bottom: 10px;
+        margin-top: -100px;
+        right: 30px;
+        margin-left: 80px;
+    }
+
+    .about .books p {
+        font-size: 1.5rem;
+        text-align: right;
+        padding-bottom: 10px;
+    }
+
+    .about .books ol {
+        padding: 10px;
+    }
+
+    .about .books ol li {
+        margin: 20px;
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .about .pink-circle {
+        width: 800px;
+        height: 600px;
+        background-size: 750px;
+        margin-top: -500px;
+        margin-left: -300px;
+    }
+
+    .projects {
+        font-size: 8vw;
+    }
+
+    .projects ul {
+        margin: 60px;
+    }
+
+    .projects li {
+        margin: 40px 0 0;
+    }
+
+    main .arrow {
+        display: none;
+    }
+
+    .eye-see-chch main, .white-lies main, .the-getaway main {
+        padding: 30px;
+    }
+
+    .eye-see-chch h1, .white-lies h1, .the-getaway h1 {
+        font-size: 4rem;
+    }
+
+    .role, .link {
+        margin: 20px 0 40px;
+        font-size: 1.3rem;
+    }
+
+    .role p, .link p {
+        padding: 10px 0;
+    }
+
+    .eye-see-chch p, .white-lies p, .the-getaway p {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        line-height: 40px;
+        padding-bottom: 30px;
+    }
+
+    .eye-see-chch .img, .white-lies .img, .the-getaway .img {
+        width: 100%;
+        height: 70vw;
+        margin: 0 auto;
+    }
+
+    .eye-see-chch .text, .the-getaway .text, .white-lies .text {
+        margin-top: 20vh;
+        padding: 30px;
+        width: 90%;
+    }
+
+    .eye-see-chch h2, .the-getaway h2, .white-lies h2 {
+        font-size: 3rem;
+    }
+
+    .eye-see-chch .three p {
+        padding-top: 80vh;
+        margin-right: 100px;
+        padding-left: 30px;
+    }
+
+    .eye-see-chch .logo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .logo-1 {
+        margin-top: -55vh;
+        margin-left: 20vw;
+        z-index: 4;
+    }
+
+    .logo-2 {
+        margin-top: -75vh;
+        margin-left: 30vw;
+    }
+
+    .logo-3 {
+        margin-top: -40vh;
+        margin-left: 40vw;
+    }
+
+    .menu-logos {
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .menu-logos div {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+        background-size: 18vw;
+        margin: 20px;
+    }
+
+    footer {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    footer .next {
+        font-size: 6vw;
+        text-align: right;
+    }
+
+    footer .arrow {
+        margin-top: 30px;
+        right: 30px;
+        position: absolute;
+    }
+
+    footer .arrow .line {
+        margin-top: 15px
+    }
+
+    footer .arrow .left {
+        margin-left: 135px;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) and (min-width:500px) {
+
+    nav {
+        right: 140px;
+        font-size: 1.4rem;
+    }
+    
+    .home .content {
+        width: 80vw;
+    }
+
+    .home .pink-img {
+        right: 80px;
+        margin-top: 220px;
+    }
+
+    .home .grey-img {
+        right: 0px;
+        margin-top: 20px;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+        margin-top: 80px;
+        margin-right: 200px;
+    }
+
+    .home h2 {
+        width: 300px;
+        font-size: 1.4rem;
+        line-height: 50px;
+        margin-right: 80px;
+    } 
+    
+    #toggle {
+        display: none;
+    }
+
+    .alt-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 30px 60px;
+        left: 0;
+    }
+
+    .alt-nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .alt-nav ul li {
+        margin: 0 30px;
+        font-size: 1rem;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+
+    #contact-content {
+        margin: auto 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        padding: 30px 30px 0;
+        overflow: hidden;
+    }
+
+    .about .img {
+        width: 80vw;
+        height: 50vw;
+        margin: 0 auto;
+    }
+
+    .about .text {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 30px 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
+    .about .text p {
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+    }
+
+    .about .books {
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        margin-top: 100px;
+    }
+
+    .about .books h3 {
+        font-size: 2.2rem;
+        text-align: right;
+        padding-bottom: 10px;
+        margin-top: -100px;
+        right: 30px;
+        margin-left: 80px;
+    }
+
+    .about .books p {
+        font-size: 1.5rem;
+        text-align: right;
+        padding-bottom: 10px;
+    }
+
+    .about .books ol {
+        padding: 10px;
+    }
+
+    .about .books ol li {
+        margin: 20px;
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .about .pink-circle {
+        width: 800px;
+        height: 600px;
+        background-size: 750px;
+        margin-top: -500px;
+        margin-left: -300px;
+    }
+
+    .projects {
+        padding: 30px;
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects .preview-box {
+        background-color: grey;
+        height: 500px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .projects .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .projects ul {
+        position: relative;
+        z-index: 9;
+    }
+
+    .projects li {
+        margin: 20px;
+        font-size: 2rem;
+    }
+
+    main .arrow {
+        display: none;
+    }
+
+    .eye-see-chch main, .white-lies main, .the-getaway main {
+        padding: 30px;
+    }
+
+    .eye-see-chch h1, .white-lies h1, .the-getaway h1 {
+        font-size: 5rem;
+        margin-right: 100px;
+    }
+
+    .role, .link {
+        margin: 20px 0 40px;
+        font-size: 1.3rem;
+    }
+
+    .role p, .link p {
+        padding: 10px 0;
+    }
+
+    .eye-see-chch p, .white-lies p, .the-getaway p {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        line-height: 40px;
+        padding-bottom: 30px;
+    }
+
+    .eye-see-chch .img, .white-lies .img, .the-getaway .img {
+        width: 100%;
+        height: 70vw;
+        margin: 0 auto;
+    }
+
+    .eye-see-chch .text, .the-getaway .text, .white-lies .text {
+        margin-top: 20vh;
+        padding: 30px;
+        width: 90%;
+    }
+
+    .eye-see-chch h2, .the-getaway h2, .white-lies h2 {
+        font-size: 3rem;
+    }
+
+    .eye-see-chch .three p {
+        padding-top: 80vh;
+        margin-right: 100px;
+        padding-left: 30px;
+    }
+
+    .eye-see-chch .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .logo-1 {
+        margin-top: -55vh;
+        margin-left: 20vw;
+        z-index: 4;
+    }
+
+    .logo-2 {
+        margin-top: -75vh;
+        margin-left: 30vw;
+    }
+
+    .logo-3 {
+        margin-top: -40vh;
+        margin-left: 40vw;
+    }
+
+    .menu-logos {
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .menu-logos div {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-size: 120px;
+        margin: 20px;
+    }
+
+    footer {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    footer .next {
+        font-size: 2rem;
+        text-align: right;
+        width: 80%;
+        float: right;
+    }
+
+    footer .arrow {
+        margin-top: 30px;
+        margin-left: -10px;
+
+    }
+
+    footer .arrow .line {
+        margin-top: 17px;
+        margin-left: -30px;
+    }
+
+    footer .arrow .left {
+        margin-left: 97px;
+        
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    .home nav {
+        right: 0;
+        left: 65%;
+        margin-right: 20vw;
+        font-size: 1.4rem;
+    }
+    
+    .home nav ul li {
+        padding: 8px 0;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .alt-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 30px 60px;
+    }
+
+    .alt-nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .alt-nav ul li {
+        margin: 0 30px;
+    }
+
+    #contact-content {
+        position: absolute;
+        margin-left: -10px;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+
+    .home .content {
+        width: 800px;
+    }
+
+    .home h1 {
+        font-weight: 500;
+        font-size: 3rem;
+        margin-top: 12vh;
+        margin-left: 60px;
+        z-index: 9;
+        position: relative;
+    }
+    
+    .home h2 {
+        width: 300px;
+        margin-right: 25vw;
+        margin-top: 40px;
+        font-size: 1.4rem;
+        line-height: 50px;
+        right: 0;
+        float: right;
+        z-index: 9;
+    }
+    
+    .home h4 {
+        margin-left: 100px;
+    }
+
+    .home .pink-img {
+        right: 80px;
+        margin-top: 180px;
+    }
+
+    .home .grey-img {
+        right: 0px;
+        margin-top: 0px;
+    }
+
+    .about {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    
+    .about main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0 120px;
+    }
+    
+    .about .img {
+        background: grey;
+        width: 500px;
+        height: 350px;
+        flex: 100%;
+        margin-top: -170px;
+    }
+    
+    .about .text h2 {
+        width: 54vw;
+        position: absolute;
+        font-size: 2.2rem;
+        margin-top: -130px;
+    }
+    
+    .about .text .p {
+        font-size: 1.2rem;
+        padding-right: 30px;
+        margin-top: 20px;
+    }
+    
+    .about .text .p p {
+        padding: 15px 0;
+    }
+    
+    .about .books {
+        padding-top: 100px;
+        padding-right: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 20vh;
+        width: 100%;
+    }
+    
+    .about .books h3 {
+        font-size: 2rem;
+    }
+    
+    .about .books p {
+        font-size: 1.2rem;
+        padding: 15px 0;
+    }
+    
+    .about ol li {
+        padding: 15px 0;
+    }
+    
+    .pink-circle {
+        background-image: url(/assets/circle.png);
+        background-size: cover;
+        height: 500px;
+        width: 800px;
+        left: 0;
+        position: absolute;
+        margin-left: -100px;
+        opacity: 50%;
+    }
+
+    .projects {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .projects .links {
+        width: 80vw;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 3vw;
+        z-index: 9;
+        position: relative;
+    }
+    
+    .projects .links .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .projects .big-line {
+        width: 15vw;
+        height: 5px;
+        background: black;
+        position: absolute;
+        margin-left: 30vw;
+    }
+    
+    .projects .small-line {
+        width: 12vw;
+        height: 5px;
+        margin-left: -5vw;
+        background: black;
+    }
+    
+    .projects .links li:hover {
+        color: #FADDDD;
+        cursor: pointer;
+    }
+    
+    .projects .preview-box {
+        background: grey;
+        height: 500px;
+        width: 350px;
+        display: flex;
+        position: absolute;
+    }
+
+    .eye-see-chch main, .white-lies main, .the-getaway main {
+        height: 100vh;
+        width: 100%;
+        padding: 60px;
+    }
+
+    .eye-see-chch h1, .white-lies h1, .the-getaway h1 {
+        font-size: 5rem;
+        margin-right: 300px;
+        margin-bottom: 30px;
+    }
+
+    .link, .role {
+        margin-bottom: 30px;
+    }
+
+    .eye-see-chch p, .white-lies p, .the-getaway p {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    .description {
+        position: absolute;
+        width: 300px;
+        right: 60px;
+        margin-top: -250px;
+    }
+
+    .img {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .text {
+        margin: 200px 30px 100px;
+        width: 50%;
+    }
+
+    .eye-see-chch .three p {
+        width: 50%;
+        position: absolute;
+        margin-top: 75vh;
+        padding: 30px;
+    }
+
+    .eye-see-chch .logo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .logo-1 {
+        margin-top: 100px;
+        right: 80px;
+    }
+
+    .logo-2 {
+        margin-top: 200px;
+        right: 400px;
+    }
+
+    .logo-3 {
+        margin-top: 400px;
+        right: 70px;
+    }
+
+    .menu-logos {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        margin-top: 100vh;
+        background-color: #FADDDD;
+        height: 40vh;
+    }
+
+    .menu-logos div {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border-radius: 50%;
+        background-size: 120px;
+        background-position: center;
+    }
+
+    footer {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 60px;
+    }
+
+    .eye-see-chch footer {
+        margin-top: 50vh;
+    }
+
+    footer h3 {
+        font-size: 3rem;
+        text-align: right;
+        width: 80%;
+        float: right;
+    }
+
+    .white-lies h1 {
+        word-wrap: break-word;
+    }
+
+    .white-lies .two .img {
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .white-lies .three {
+        background-color: black;
+        color: white;
+    }
+
+}
