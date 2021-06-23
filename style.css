@@ -21,6 +21,10 @@ body {
     color: #FADDDD;
 }
 
+.fade {
+    animation: fade 1s forwards;
+}
+
 @keyframes fade {
     0% {
         opacity: 0;
@@ -179,6 +183,7 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
 
 .eye-see-chch .two .img {
     background-image: url(/assets/eye-see-chch-pic2.jpg);
+    background-size: contain;
 }
 
 .white-lies .one .img {
@@ -191,21 +196,26 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
 
 .the-getaway .one .img {
     background-image: url(/assets/the-getaway-home.jpg);
+    background-repeat: no-repeat;
 }
 
 .the-getaway .two .img {
     background-image: url(/assets/the-getaway-pic1.jpg);
+    background-repeat: no-repeat;
 }
 
 .the-getaway .three .img {
     background-image: url(/assets/the-getaway-pic2.jpg);
+    background-repeat: no-repeat;
 }
 
 .the-getaway .four .img {
+    background-repeat: no-repeat;
     background-image: url(/assets/the-getaway-pic3.jpg);
 }
 
 .the-getaway .five .img {
+    background-repeat: no-repeat;
     background-image: url(/assets/the-getaway-pic4.jpg);
 }
 
@@ -268,8 +278,12 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
     background-color: #1581a8;
 }
 
-.white-lies .colours div:nth-child(3) {
+.white-lies .three {
     background-color: #0e101a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .the-getaway .colours div:nth-child(1) {
@@ -315,7 +329,7 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(-20px);
+		transform: translatey(-50px);
 	}
 	100% {
 		transform: translatey(0px);
@@ -351,6 +365,11 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
     to {
         margin-left: 0vw;
     }
+}
+
+footer h3 {
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -684,6 +703,10 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
         margin: auto 0;
         width: 100%;
         text-align: center;
+        position: absolute;
+        margin-left: 250px;
+        font-size: 1.2rem;
+        top: 80px;
     }
 
     .about {
@@ -826,13 +849,14 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
     }
 
     .eye-see-chch .text, .the-getaway .text, .white-lies .text {
-        margin-top: 20vh;
+        margin-top: 15vh;
         padding: 30px;
         width: 90%;
     }
 
     .eye-see-chch h2, .the-getaway h2, .white-lies h2 {
         font-size: 3rem;
+        padding-bottom: 10px;
     }
 
     .eye-see-chch .three p {
@@ -887,7 +911,7 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
         padding: 30px;
     }
 
-    footer .next {
+    footer h3 {
         font-size: 2rem;
         text-align: right;
         width: 80%;
@@ -908,6 +932,11 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
     footer .arrow .left {
         margin-left: 97px;
         
+    }
+
+    .white-lies .two .img {
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
 }
@@ -947,7 +976,16 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
 
     #contact-content {
         position: absolute;
-        margin-left: -10px;
+    }
+
+    .home #contact-content {
+        margin-top: 5px;
+        padding: 10px 0;
+    }
+
+    .alt-nav #contact-content {
+        margin-top: 40px;
+        margin-left: 180px;
     }
 
     .nav-logo {
@@ -1134,6 +1172,10 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
         margin-bottom: 30px;
     }
 
+    .the-getaway .text {
+        margin-top: 10vh;
+    }
+
     .link, .role {
         margin-bottom: 30px;
     }
@@ -1141,6 +1183,15 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
     .eye-see-chch p, .white-lies p, .the-getaway p {
         font-size: 1.5rem;
         line-height: 40px;
+    }
+
+    .eye-see-chch h2, .white-lies h2, .the-getaway h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .white-lies .two .img {
+        height: 60vh;
     }
 
     .description {
@@ -1236,8 +1287,39 @@ nav ul li:hover, #contact-content:hover, #contact-content a:hover {
         background-repeat: no-repeat;
     }
 
-    .white-lies .three {
-        background-color: black;
+    .small-text {
+        width: 50%;
+        font-size: 1.2rem!important;
+        padding: 30px;
+    }
+
+    .the-getaway .one .img {
+        background-size: contain;
+        background-position-y: 0px;
+    }
+
+    .the-getaway .two .img {
+        background-size: contain;
+        height: 90vh;
+    }
+
+    .the-getaway .three .img {
+        background-size: contain;
+        height: 90vh;
+    }
+
+    .the-getaway .four .img {
+        background-size: contain;
+        height: 90vh;
+    }
+
+    .the-getaway .five .img {
+        background-size: contain;
+        height: 90vh;
+    }
+
+    .the-getaway .three, .the-getaway .four, .the-getaway .five {
+        background: black;
         color: white;
     }
 

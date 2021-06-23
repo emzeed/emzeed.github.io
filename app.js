@@ -3,6 +3,7 @@ const drpDwnContent = document.getElementById('contact-content');
 
 drpDwnBtn.addEventListener('click', () => {
     if (drpDwnContent.style.display === "none") {
+        drpDwnContent.classList.add('fade');
         drpDwnContent.style.display = "block";
     } else {
         drpDwnContent.style.display = "none";
