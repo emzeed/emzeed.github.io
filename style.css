@@ -1,11 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
 * {
+    font-family: 'Reem Kufi', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Red Rose', cursive;
-    font-weight: 500;
+}
+
+a:active {
+    color: #DD7761;
+}
+
+body {
+    background-color: #F9F6F2;
+    padding-bottom: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
 }
 
 a {
@@ -13,1314 +29,842 @@ a {
     text-decoration: none;
 }
 
-body {
-    background-color: #FFFCF6;
-}
-
-.pink {
-    color: #FADDDD;
-}
-
-.fade {
-    animation: fade 1s forwards;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-nav {
-    position: absolute;
-    z-index: 9;
-}
-
-nav ul li:hover, #contact-content:hover, #contact-content a:hover {
-    color: #FADDDD;
-    cursor: pointer;
-}
-
-#contact-content {
-    margin-left: -20px;
-    margin-top: 20px;
-}
-
-.home nav ul li {
-    padding: 8px 0;
-}
-
-.alt-nav { 
-    position: relative;
-}
-
-#toggle {
-    display: flex;
-    position: absolute;
-}
-
-#toggle:hover {
-    cursor: pointer;
-}
-
-#toggle div {
-    background-color: black;
+nav a:nth-child(2) {
+    border: #DD7761 solid 2px;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
+    padding: 10px 10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+.home h1 {
+    color: #DD7761;
+    margin-bottom: 10px;
+    font-size: 2.65rem;
+    font-weight: 400;
 }
 
 .home {
-    width: 100%;
-    height: 100vh;
+    padding: 10px 30px;
+}
+
+.home h3 {
+    font-size: 1.3rem;
+}
+
+.about:nth-of-type(2) div {
+    float: right;
+    padding-bottom: 90px;
+}
+
+.about ol {
+    margin: 10px 0 0 10px
+}
+
+.about ol li {
+    padding: 10px 0;
+}
+
+.projects {
+    padding: 30px;
+}
+
+.projects h1 {
+    border-bottom: 3px solid black;
+}
+
+.contact {
+    padding: 30px;
+    text-align: center;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-}
-
-.home .content {
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    padding: 30px;
     flex-direction: column;
 }
 
-.home .content .top, .home .content .bottom {
-    flex: 1;
+.contact div {
+    display: flex;
 }
 
-.home .img {
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width: 250px;
-    height: 250px;
+.white-lies-entertainment section, .white-lies-entertainment main, .eye-see-chch section, .eye-see-chch main, .the-getaway section, .the-getaway main {
+    padding: 30px;
 }
 
-.home .pink-img {
-    background-color: #FADDDD;
-    opacity: 50%;
+.role, .link {
+    margin: 20px 0;
 }
 
-.home .grey-img {
-    background-color: #C4C4C4;
+.role p:nth-child(1), .link p:nth-child(1) {
+    color: grey;
 }
 
-.home .bottom .line {
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    animation: line 1s forwards;
-}
-
-.home .top h1 {
-    z-index: 9;
-    position: relative;
-}
-
-.home h2 {
-    margin-top: 40px;
-    line-height: 35px;
-    position: absolute;
-    right: 0;
-    z-index: 9;
-}
-
-@keyframes line {
-    from {
-        width: 0px;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-.about .img {
-    background: grey;
-}
-
-.about .pink-circle {
-    background-image: url(/assets/circle.png);
-    background-repeat: no-repeat;
-    opacity: 50%;
-}
-
-.arrow .line {
-    background: black;
-    width: 3px;
-    height: 180px;
-    margin-left: 10px;
-    margin-top: -80px;
-    position: absolute;
-}
-
-.arrow .down {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 10px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    margin-top: 75px;
-}
-
-.arrow {
-    margin-left: 35vw;
-}
-
-.eye-see-chch .one .img {
-    background-image: url(/assets/eye-see-chch-pic1.jpg);
-}
-
-.eye-see-chch .two .img {
-    background-image: url(/assets/eye-see-chch-pic2.jpg);
+.bg-img {
     background-size: contain;
-}
-
-.white-lies .one .img {
-    background-image: url(/assets/white-lies-pic1.jpg);
-}
-
-.white-lies .two .img {
-    background-image: url(/assets/white-lies-pic2.png);
-}
-
-.the-getaway .one .img {
-    background-image: url(/assets/the-getaway-home.jpg);
-    background-repeat: no-repeat;
-}
-
-.the-getaway .two .img {
-    background-image: url(/assets/the-getaway-pic1.jpg);
-    background-repeat: no-repeat;
-}
-
-.the-getaway .three .img {
-    background-image: url(/assets/the-getaway-pic2.jpg);
-    background-repeat: no-repeat;
-}
-
-.the-getaway .four .img {
-    background-repeat: no-repeat;
-    background-image: url(/assets/the-getaway-pic3.jpg);
-}
-
-.the-getaway .five .img {
-    background-repeat: no-repeat;
-    background-image: url(/assets/the-getaway-pic4.jpg);
-}
-
-.eye-see-chch .img, .white-lies .img, .the-getaway .img {
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+.one .bg-img {
     background-size: cover;
 }
 
-.one, .two {
-    background-color: black;
-    color: white;
+.one, .three, .five, .seven, .nine {
+    background-color: white;
 }
 
-.eye-see-chch main, .white-lies main, .the-getaway main {
-    min-height: 100vh;
-    padding-bottom: 30px;
-}
-
-.eye-see-chch section, .white-lies section, .the-getaway section {  
-    min-height: 100vh;
+.eye-see-chch img, .white-lies-entertainment img, .the-getaway img {
     width: 100%;
-    padding-bottom: 30px;
 }
 
-.colours div {
-    height: 25vh;
-    width: 100%;
-    margin-left: 0;
+.try {
+    display: none;
 }
 
-.slideColours {
-    animation: slideColours 1s forwards;
+.white-lies-entertainment .one .bg-img {
+    background-size: contain;
 }
 
-.eye-see-chch .colours div:nth-child(1) {
-    background-color: #1f1f1f;
-}
-
-.eye-see-chch .colours div:nth-child(2) {
-    background-color: #ce2e4a;
-}
-
-.eye-see-chch .colours div:nth-child(3) {
-    background: #ff5f5f;
-}
-
-.eye-see-chch .colours div:nth-child(4) {
-    background-color: #ffb0b0;
-}
-
-.eye-see-chch .colours div:nth-child(5) {
-    background-color: #FADDDD;
-}
-
-.white-lies .colours div:nth-child(1) {
-    background-color: #0cebe4;
-}
-
-.white-lies .colours div:nth-child(2) {
-    background-color: #1581a8;
-}
-
-.white-lies .three {
-    background-color: #0e101a;
-    color: white;
+.white-lies-entertainment .img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.the-getaway .colours div:nth-child(1) {
-    background-color: #DCE0E0;
+.white-lies-entertainment .colours div:nth-child(1) {
+    background-color: #A0FFF9;
 }
 
-.the-getaway .colours div:nth-child(2) {
-    background-color: #51745C;
+.white-lies-entertainment .colours div:nth-child(2) {
+    background-color: #1487AB;
 }
 
-.the-getaway .colours div:nth-child(3) {
-    background-color: #000;
+.white-lies-entertainment .colours div:nth-child(3) {
+    background-color: #10111D;
 }
 
-.eye-see-chch .three {
-    background-color: #FADDDD;
+.white-lies-entertainment .font {
+    height: 50vh;
 }
 
-.eye-see-chch .logo {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.white-lies-entertainment .six {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-lies-entertainment .six img:nth-of-type(2) {
+    height: 70vh;
+    width: auto;
+    padding-top: 20px;
+}
+
+.white-lies-entertainment .seven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 60px;
+    font-weight: 700;
+}
+
+.eye-see-chch .eight .bg-img {
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
     position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #F9F6F2;
+    position: fixed;
 }
 
-.logo-1 {
-    background-image: url(/assets/logo.png);
-	animation: float 5s ease-in-out infinite .8s;
+footer a {
+    color: #DD7761;
+    font-size: 1.3rem;
 }
 
-.logo-2 {
-    background-image: url(/assets/eye.png);
-	animation: float 5s ease-in-out infinite 1s;
-}
-
-.logo-3 {
-    background-image: url(/assets/inksmile.png);
-	animation: float 5s ease-in-out infinite 1.3s;
-}
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-50px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-.menu-logos div {
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.home-logo {
-    background-image: url(/assets/home.png);
-}
-
-.settings-logo {
-    background-image: url(/assets/settingsicon.png);
-}
-
-.profile-logo {
-    background-image: url(/assets/profileicon.png);
-}
-
-.add-logo {
-    background-image: url(/assets/addicon.png);
-}
-
-@keyframes slideColours {
-    from {
-        margin-left: -90vw;
-    }
-    to {
-        margin-left: 0vw;
-    }
-}
-
-footer h3 {
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-
-@media only screen and (max-width: 500px) {
-
-    .home nav {
-        right: 60px;
-        margin-top: 40px;
-        font-size: 1.4rem;
-    }
-
-    .home .grey-img {
-        right: 0;
-        margin-top: 30px;
-    }    
-
-    .home .pink-img {
-        right: 50px;
-        margin-top: 200px;
-    }
-
-    .home h1 {
-        margin-top: 100px;
-        margin-right: 170px;
-        font-size: 2.5rem;
-    }
-
-    .home h2 {
-        width: 250px;
-        margin-right: 60px;
-        font-size: 1.3rem;
-    }
-
-    .home h4 {
-        margin-left: 30px;
-    }
-
-    .alt-nav {
-        width: 100%;
-        padding: 30px 30px 0px;
-    }
-
-    .alt-nav ul {
-        width: 100%;
-        font-size: 1.2rem;
-        margin: 30px 0 20px;
-        display: none;
-    }
-
-    .alt-nav ul li {
-        margin: 0 auto;
-        line-height: 40px;
-        width: 20%;
-    }
-
-    .alt-nav #toggle {
-        right: 30px;
-        top: 30px;
-        z-index: 9;
-        height: 20px;
-    }
-
-    #contact-content {
-        margin: auto 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .about {
-        padding: 30px 30px 0;
-        overflow: hidden;
-    }
-
-    .about .img {
-        width: 80vw;
-        height: 50vw;
-        margin: 0 auto;
-    }
-
-    .about .text {
-        width: 80vw;
-        margin: 0 auto;
-        padding: 30px 0;
-    }
-
-    .about h2 {
-        font-size: 2rem;
-        padding-bottom: 20px;
-    }
-
-    .about .text p {
-        font-size: 1.3rem;
-        padding-bottom: 20px;
-    }
-
-    .about .books {
-        width: 100%;
-        position: relative;
-        z-index: 9;
-        margin-top: 100px;
-    }
-
-    .about .books h3 {
-        font-size: 2.2rem;
-        text-align: right;
-        padding-bottom: 10px;
-        margin-top: -100px;
-        right: 30px;
-        margin-left: 80px;
-    }
-
-    .about .books p {
-        font-size: 1.5rem;
-        text-align: right;
-        padding-bottom: 10px;
-    }
-
-    .about .books ol {
-        padding: 10px;
-    }
-
-    .about .books ol li {
-        margin: 20px;
-        font-size: 1.2rem;
-        padding-left: 10px;
-    }
-
-    .about .pink-circle {
-        width: 800px;
-        height: 600px;
-        background-size: 750px;
-        margin-top: -500px;
-        margin-left: -300px;
-    }
-
-    .projects {
-        font-size: 8vw;
-    }
-
-    .projects ul {
-        margin: 60px;
-    }
-
-    .projects li {
-        margin: 40px 0 0;
-    }
-
-    main .arrow {
-        display: none;
-    }
-
-    .eye-see-chch main, .white-lies main, .the-getaway main {
-        padding: 30px;
-    }
-
-    .eye-see-chch h1, .white-lies h1, .the-getaway h1 {
-        font-size: 4rem;
-    }
-
-    .role, .link {
-        margin: 20px 0 40px;
-        font-size: 1.3rem;
-    }
-
-    .role p, .link p {
-        padding: 10px 0;
-    }
-
-    .eye-see-chch p, .white-lies p, .the-getaway p {
-        font-size: 1.5rem;
-    }
-
-    .description {
-        line-height: 40px;
-        padding-bottom: 30px;
-    }
-
-    .eye-see-chch .img, .white-lies .img, .the-getaway .img {
-        width: 100%;
-        height: 70vw;
-        margin: 0 auto;
-    }
-
-    .eye-see-chch .text, .the-getaway .text, .white-lies .text {
-        margin-top: 20vh;
-        padding: 30px;
-        width: 90%;
-    }
-
-    .eye-see-chch h2, .the-getaway h2, .white-lies h2 {
-        font-size: 3rem;
-    }
-
-    .eye-see-chch .three p {
-        padding-top: 80vh;
-        margin-right: 100px;
-        padding-left: 30px;
-    }
-
-    .eye-see-chch .logo {
-        width: 170px;
-        height: 170px;
-    }
-
-    .logo-1 {
-        margin-top: -55vh;
-        margin-left: 20vw;
-        z-index: 4;
-    }
-
-    .logo-2 {
-        margin-top: -75vh;
-        margin-left: 30vw;
-    }
-
-    .logo-3 {
-        margin-top: -40vh;
-        margin-left: 40vw;
-    }
-
-    .menu-logos {
-        width: 100%;
-        padding: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .menu-logos div {
-        width: 30vw;
-        height: 30vw;
-        border-radius: 50%;
-        background-size: 18vw;
-        margin: 20px;
-    }
-
-    footer {
-        width: 100%;
-        height: 30vh;
-        display: flex;
-        justify-content: space-between;
-        padding: 30px;
-    }
-
-    footer .next {
-        font-size: 6vw;
-        text-align: right;
-    }
-
-    footer .arrow {
-        margin-top: 30px;
-        right: 30px;
-        position: absolute;
-    }
-
-    footer .arrow .line {
-        margin-top: 15px
-    }
-
-    footer .arrow .left {
-        margin-left: 135px;
-    }
-
-
-}
-
-@media only screen and (max-width: 900px) and (min-width:500px) {
+@media only screen and (max-width: 400px) {
 
     nav {
-        right: 140px;
-        font-size: 1.4rem;
-    }
-    
-    .home .content {
-        width: 80vw;
+        border-bottom: 2px solid #DD7761;
+        margin: 0 20px;
+        padding: 20px;
     }
 
-    .home .pink-img {
-        right: 80px;
-        margin-top: 220px;
-    }
-
-    .home .grey-img {
-        right: 0px;
-        margin-top: 20px;
-    }
-
-    .home h1 {
-        font-size: 3rem;
-        margin-top: 80px;
-        margin-right: 200px;
-    }
-
-    .home h2 {
-        width: 300px;
-        font-size: 1.4rem;
-        line-height: 50px;
-        margin-right: 80px;
-    } 
-    
-    #toggle {
-        display: none;
-    }
-
-    .alt-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 30px 60px;
-        left: 0;
-    }
-
-    .alt-nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .alt-nav ul li {
-        margin: 0 30px;
-        font-size: 1rem;
-    }
-
-    .nav-logo {
-        position: absolute;
-        left: 30px;
-        top: 30px;
-    }
-
-    #contact-content {
-        margin: auto 0;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        margin-left: 250px;
-        font-size: 1.2rem;
-        top: 80px;
+    nav ul li {
+        margin: 10px 0;
     }
 
     .about {
-        padding: 30px 30px 0;
-        overflow: hidden;
-    }
-
-    .about .img {
-        width: 80vw;
-        height: 50vw;
-        margin: 0 auto;
-    }
-
-    .about .text {
-        width: 80vw;
-        margin: 0 auto;
-        padding: 30px 0;
-        position: relative;
-        z-index: 3;
+        padding: 30px;
     }
 
     .about h2 {
-        font-size: 2rem;
         padding-bottom: 20px;
     }
 
-    .about .text p {
-        font-size: 1.3rem;
+    .about p {
         padding-bottom: 20px;
+        font-size: 1.1rem;
     }
 
-    .about .books {
-        width: 100%;
-        position: relative;
-        z-index: 9;
-        margin-top: 100px;
-    }
-
-    .about .books h3 {
-        font-size: 2.2rem;
-        text-align: right;
-        padding-bottom: 10px;
-        margin-top: -100px;
-        right: 30px;
-        margin-left: 80px;
-    }
-
-    .about .books p {
+    .about h3 {
         font-size: 1.5rem;
-        text-align: right;
         padding-bottom: 10px;
     }
 
-    .about .books ol {
+    .about h4 {
+        font-size: 1.3rem;
+        padding-bottom: 10px;
+    }
+
+    .projects h1 {
+        padding: 30px 10px 10px;
+        line-height: 60px;
+        font-size: 8.5vw;
+    }
+
+    .contact div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact p {
         padding: 10px;
     }
 
-    .about .books ol li {
-        margin: 20px;
+    .contact .sm {
+        font-size: 7vw;
+    }
+
+    .contact .email {
+        font-size: 5vw;
+        word-break: break-all;
+    }
+
+    .contact .lg {
+        font-size: 14vw;
+    }
+
+    .white-lies-entertainment main, .eye-see-chch main, .the-getaway main {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .white-lies-entertainment h1, .eye-see-chch h1, .the-getaway h1 {
+        font-size: 2.4rem;
+    }
+
+    .white-lies-entertainment .main-text p, .eye-see-chch .main-text p, .the-getaway .main-text p {
         font-size: 1.2rem;
-        padding-left: 10px;
+        padding: 20px 0;
     }
 
-    .about .pink-circle {
-        width: 800px;
-        height: 600px;
-        background-size: 750px;
-        margin-top: -500px;
-        margin-left: -300px;
+    .white-lies-entertainment .one, .eye-see-chch .one, .the-getaway .one {
+        padding: 0;
     }
 
-    .projects {
-        padding: 30px;
-        display: flex;
-        height: 80vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .projects .preview-box {
-        background-color: grey;
-        height: 500px;
-        width: 300px;
-        position: absolute;
-    }
-
-    .projects .row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .projects ul {
-        position: relative;
-        z-index: 9;
-    }
-
-    .projects li {
-        margin: 20px;
-        font-size: 2rem;
-    }
-
-    main .arrow {
-        display: none;
-    }
-
-    .eye-see-chch main, .white-lies main, .the-getaway main {
-        padding: 30px;
-    }
-
-    .eye-see-chch h1, .white-lies h1, .the-getaway h1 {
-        font-size: 5rem;
-        margin-right: 100px;
-    }
-
-    .role, .link {
-        margin: 20px 0 40px;
-        font-size: 1.3rem;
-    }
-
-    .role p, .link p {
-        padding: 10px 0;
-    }
-
-    .eye-see-chch p, .white-lies p, .the-getaway p {
-        font-size: 1.5rem;
-    }
-
-    .description {
-        line-height: 40px;
-        padding-bottom: 30px;
-    }
-
-    .eye-see-chch .img, .white-lies .img, .the-getaway .img {
+    .white-lies-entertainment .text, .eye-see-chch .text, .the-getaway .text {
         width: 100%;
-        height: 70vw;
-        margin: 0 auto;
-    }
-
-    .eye-see-chch .text, .the-getaway .text, .white-lies .text {
-        margin-top: 15vh;
-        padding: 30px;
-        width: 90%;
-    }
-
-    .eye-see-chch h2, .the-getaway h2, .white-lies h2 {
-        font-size: 3rem;
-        padding-bottom: 10px;
-    }
-
-    .eye-see-chch .three p {
-        padding-top: 80vh;
-        margin-right: 100px;
-        padding-left: 30px;
-    }
-
-    .eye-see-chch .logo {
-        width: 200px;
-        height: 200px;
-    }
-
-    .logo-1 {
-        margin-top: -55vh;
-        margin-left: 20vw;
-        z-index: 4;
-    }
-
-    .logo-2 {
-        margin-top: -75vh;
-        margin-left: 30vw;
-    }
-
-    .logo-3 {
-        margin-top: -40vh;
-        margin-left: 40vw;
-    }
-
-    .menu-logos {
-        width: 100%;
-        padding: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .menu-logos div {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-size: 120px;
-        margin: 20px;
-    }
-
-    footer {
-        width: 100%;
-        height: 30vh;
-        display: flex;
-        justify-content: space-between;
+        min-height: 50vh;
         padding: 30px;
     }
 
-    footer h3 {
-        font-size: 2rem;
-        text-align: right;
-        width: 80%;
-        float: right;
-    }
-
-    footer .arrow {
-        margin-top: 30px;
-        margin-left: -10px;
-
-    }
-
-    footer .arrow .line {
-        margin-top: 17px;
-        margin-left: -30px;
-    }
-
-    footer .arrow .left {
-        margin-left: 97px;
-        
-    }
-
-    .white-lies .two .img {
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-}
-
-@media only screen and (min-width: 900px) {
-
-    .home nav {
-        right: 0;
-        left: 65%;
-        margin-right: 20vw;
-        font-size: 1.4rem;
-    }
-    
-    .home nav ul li {
-        padding: 8px 0;
-    }
-
-    #toggle {
-        display: none;
-    }
-
-    .alt-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 30px 60px;
-    }
-
-    .alt-nav ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .alt-nav ul li {
-        margin: 0 30px;
-    }
-
-    #contact-content {
-        position: absolute;
-    }
-
-    .home #contact-content {
-        margin-top: 5px;
-        padding: 10px 0;
-    }
-
-    .alt-nav #contact-content {
-        margin-top: 40px;
-        margin-left: 180px;
-    }
-
-    .nav-logo {
-        position: absolute;
-        left: 30px;
-        top: 30px;
-    }
-
-    .home .content {
-        width: 800px;
-    }
-
-    .home h1 {
-        font-weight: 500;
-        font-size: 3rem;
-        margin-top: 12vh;
-        margin-left: 60px;
-        z-index: 9;
-        position: relative;
-    }
-    
-    .home h2 {
-        width: 300px;
-        margin-right: 25vw;
-        margin-top: 40px;
-        font-size: 1.4rem;
-        line-height: 50px;
-        right: 0;
-        float: right;
-        z-index: 9;
-    }
-    
-    .home h4 {
-        margin-left: 100px;
-    }
-
-    .home .pink-img {
-        right: 80px;
-        margin-top: 180px;
-    }
-
-    .home .grey-img {
-        right: 0px;
-        margin-top: 0px;
-    }
-
-    .about {
-        width: 100%;
-        padding-bottom: 30px;
-    }
-    
-    .about main {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        padding: 0 120px;
-    }
-    
-    .about .img {
-        background: grey;
-        width: 500px;
-        height: 350px;
-        flex: 100%;
-        margin-top: -170px;
-    }
-    
-    .about .text h2 {
-        width: 54vw;
-        position: absolute;
+    .white-lies-entertainment h3, .eye-see-chch h3, .the-getaway h3 {
         font-size: 2.2rem;
-        margin-top: -130px;
-    }
-    
-    .about .text .p {
-        font-size: 1.2rem;
-        padding-right: 30px;
-        margin-top: 20px;
-    }
-    
-    .about .text .p p {
-        padding: 15px 0;
-    }
-    
-    .about .books {
-        padding-top: 100px;
-        padding-right: 120px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        height: 20vh;
-        width: 100%;
-    }
-    
-    .about .books h3 {
-        font-size: 2rem;
-    }
-    
-    .about .books p {
-        font-size: 1.2rem;
-        padding: 15px 0;
-    }
-    
-    .about ol li {
-        padding: 15px 0;
-    }
-    
-    .pink-circle {
-        background-image: url(/assets/circle.png);
-        background-size: cover;
-        height: 500px;
-        width: 800px;
-        left: 0;
-        position: absolute;
-        margin-left: -100px;
-        opacity: 50%;
+        margin-bottom: 10px;
     }
 
-    .projects {
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .projects .links {
-        width: 80vw;
-        height: 70vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 3vw;
-        z-index: 9;
-        position: relative;
-    }
-    
-    .projects .links .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin: 20px 0;
-    }
-    
-    .projects .big-line {
-        width: 15vw;
-        height: 5px;
-        background: black;
-        position: absolute;
-        margin-left: 30vw;
-    }
-    
-    .projects .small-line {
-        width: 12vw;
-        height: 5px;
-        margin-left: -5vw;
-        background: black;
-    }
-    
-    .projects .links li:hover {
-        color: #FADDDD;
-        cursor: pointer;
-    }
-    
-    .projects .preview-box {
-        background: grey;
-        height: 500px;
-        width: 350px;
-        display: flex;
-        position: absolute;
-    }
-
-    .eye-see-chch main, .white-lies main, .the-getaway main {
-        height: 100vh;
-        width: 100%;
-        padding: 60px;
-    }
-
-    .eye-see-chch h1, .white-lies h1, .the-getaway h1 {
-        font-size: 5rem;
-        margin-right: 300px;
-        margin-bottom: 30px;
-    }
-
-    .the-getaway .text {
-        margin-top: 10vh;
-    }
-
-    .link, .role {
-        margin-bottom: 30px;
-    }
-
-    .eye-see-chch p, .white-lies p, .the-getaway p {
-        font-size: 1.5rem;
-        line-height: 40px;
-    }
-
-    .eye-see-chch h2, .white-lies h2, .the-getaway h2 {
-        font-size: 2.5rem;
+    .white-lies-entertainment h4, .eye-see-chch h4, .the-getaway h4 {
+        font-size: 1.8rem;
         margin-bottom: 20px;
     }
 
-    .white-lies .two .img {
-        height: 60vh;
+    .white-lies-entertainment p, .eye-see-chch p, .the-getaway p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
     }
 
-    .description {
-        position: absolute;
-        width: 300px;
-        right: 60px;
-        margin-top: -250px;
+    .role, .link {
+        padding-left: 30px;
+    }
+
+    .role p, .link p {
+        font-size: 1.4rem;
+    }
+
+    .bg-img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .eye-see-chch .five .bg-img {
+        background-size: contain;
+    }
+
+    .eye-see-chch .six, .eye-see-chch .two, .the-getaway .two, .the-getaway .four {
+        padding: 50px 30px;
+    }
+    
+    .eye-see-chch .six h3, .eye-see-chch .two h3 {
+        text-align: center;
+    }
+
+    .the-getaway .img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .the-getaway .img img {
+        max-width: 50%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .white-lies-entertainment .img {
+        flex-direction: column;
+    }
+
+    .white-lies-entertainment .colours div {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .white-lies-entertainment .five img {
+        width: 80%;
+    }
+
+    .white-lies-entertainment .seven p {
+        font-size: 1.5rem;
+    }
+
+    .bottom-bar {
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bottom-bar div {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .bottom-bar div:nth-of-type(2) p {
+        font-size: 7vw;
+        float: right;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        padding: 0 10px;
+    }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+
+    nav {
+        padding: 30px;
+    }
+
+    nav ul{
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .about {
+        padding: 30px 100px;
+    }
+
+    .about h2 {
+        margin-bottom: 20px;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    .projects h1 {
+        font-size: 6vw;
+        padding: 40px 10px 20px;
+    }
+
+    .contact div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    .contact .line {
+        background-color: black;
+        height: 2px;
+        width: 4vw;
+        margin: 0 20px;
+    }
+
+    .contact .med {
+        width: 80%;
+    }
+
+    .contact .sm {
+        font-size: 2.5vw;
+    }
+
+    .contact .email {
+        font-size: 3vw;
+    }
+
+    .contact .lg {
+        font-size: 7vw;
+    }
+
+    .white-lies-entertainment main, .eye-see-chch main, .the-getaway main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+    }
+
+    .white-lies-entertainment .sub-text, .eye-see-chch .sub-text, .the-getaway .sub-text {
+        width: 40%;
+        padding: 20px 0;
+        font-size: 1.2rem;
+    }
+
+    .white-lies-entertainment .five img {
+        width: 80%;
+    }
+
+    .role, .link {
+        margin: 40px 0;
+    }
+
+    .white-lies-entertainment .main-text, .eye-see-chch .main-text, .the-getaway .main-text {
+        width: 60%;
+        padding: 0 20px;
+    }
+
+    .white-lies-entertainment h1, .eye-see-chch h1, .the-getaway h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .white-lies-entertainment .main-text p, .eye-see-chch .main-text p, .the-getaway .main-text p {
+        font-size: 1.2rem;
+    }
+
+    .white-lies-entertainment .one, .eye-see-chch .one, .the-getaway .one {
+        padding: 0;
+    }
+
+    .white-lies-entertainment .text, .eye-see-chch .text, .the-getaway .text {
+        width: 100%;
+        min-height: 50vh;
+        padding: 30px;
+    }
+
+    .white-lies-entertainment h3, .eye-see-chch h3, .the-getaway h3 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .white-lies-entertainment h4, .eye-see-chch h4, .the-getaway h4 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .white-lies-entertainment p, .eye-see-chch p, .the-getaway p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .role, .link {
+        padding-left: 30px;
+    }
+
+    .role p, .link p {
+        font-size: 1.4rem;
+    }
+
+    .bg-img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .eye-see-chch .five .bg-img {
+        background-size: contain;
+    }
+
+    .eye-see-chch .six, .eye-see-chch .two, .the-getaway .two, .the-getaway .four, .white-lies-entertainment .six {
+        padding: 50px 30px;
+    }
+
+    .eye-see-chch .six h3, .eye-see-chch .two h3 {
+        text-align: center;
+    }
+
+    .the-getaway .img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .the-getaway .img img {
+        max-width: 50%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .white-lies-entertainment .colours div {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .white-lies-entertainment .img {
+        flex-direction: column;
+    }
+
+    .white-lies-entertainment .img img {
+        padding: 10px 0;
+    }
+
+    .white-lies-entertainment .seven p {
+        font-size: 1.5rem;
+    }
+
+    .bottom-bar {
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bottom-bar div {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .bottom-bar div:nth-of-type(2) p {
+        font-size: 7vw;
+        float: right;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        padding: 0 10px;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+
+    nav {
+        padding: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 30px;
+    }
+
+    nav a, footer a {
+        transition: ease all 1s;
+    }
+
+    nav a:hover, footer a:hover {
+        color: #DD7761;
+        transform: scale(1.1);
+    }
+
+    .contact a:hover {
+        color: #DD7761;
+    }
+
+    .home {
+        display: flex;
+    }
+
+    .home div {
+        flex: 1;
+    }
+
+    .home div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 70vh;
+        padding: 0 50px;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .home h3 {
+        font-size: 1.6rem;
+    }
+
+    .about {
+        padding: 30px 100px;
+    }
+
+    .about:nth-of-type(1) {
+        display: flex;
+    }
+
+    .about:nth-of-type(1) div {
+        flex: 1;
+    }
+
+    .about h2 {
+        padding-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+    }
+
+    .about h3 {
+        font-size: 1.8rem;
+        padding-bottom: 10px;
+    }
+
+    .about h4 {
+        font-size: 1.5rem;
+    }
+
+    .about ol {
+        font-size: 1.2rem;
+    }
+
+    .projects h1 {
+        font-size: 6vw;
+        padding: 40px 10px 20px;
+    }
+
+    .contact div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    .contact .line {
+        background-color: black;
+        height: 5px;
+        width: 4vw;
+        margin: 0 20px;
+    }
+
+    .contact .med {
+        width: 80%;
+    }
+
+    .contact .sm {
+        font-size: 2.5vw;
+    }
+
+    .contact .email {
+        font-size: 3vw;
+    }
+
+    .contact .lg {
+        font-size: 7vw;
+    }
+
+    .projects a:hover {
+        color: #DD7761;
+    }
+
+    .white-lies-entertainment main, .eye-see-chch main, .the-getaway main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+    }
+
+    .white-lies-entertainment .sub-text, .eye-see-chch .sub-text, .the-getaway .sub-text {
+        width: 40%;
+        padding: 20px 40px;
+        font-size: 1.2rem;
+    }
+
+    .role, .link {
+        margin: 40px 0;
+    }
+
+    .white-lies-entertainment .main-text, .eye-see-chch .main-text, .the-getaway .main-text {
+        width: 60%;
+    }
+
+    .white-lies-entertainment h1, .eye-see-chch h1, .the-getaway h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .white-lies-entertainment .main-text p, .eye-see-chch .main-text p, .the-getaway .main-text p {
+        font-size: 1.5rem;
+        padding-right: 100px;
+    }
+
+    .white-lies-entertainment section, .eye-see-chch section, .the-getaway section {
+        display: flex;
+        min-height: 70vh;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .white-lies-entertainment section div, .eye-see-chch section div, .the-getaway section div {
+        flex: 1;
+    }
+
+    .white-lies-entertainment .one, .eye-see-chch .one, .the-getaway .one {
+        padding: 0;
+    }
+
+    .white-lies-entertainment .text, .eye-see-chch .text, .the-getaway .text {
+        width: 50%;
+        height: 100%;
+        padding: 60px;
+    }
+
+    .white-lies-entertainment h3, .eye-see-chch h3, .the-getaway h3 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .white-lies-entertainment h4, .eye-see-chch h4, .the-getaway h4 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .white-lies-entertainment p, .eye-see-chch p, .the-getaway p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .white-lies-entertainment .five img {
+        width: 100%;
+    }
+
+    .role, .link {
+        padding-left: 30px;
+    }
+
+    .role p, .link p {
+        font-size: 1.4rem;
+    }
+
+    .bg-img {
+        width: 50%;
+        height: 80vh;
+    }
+
+    .eye-see-chch .five .bg-img {
+        background-size: contain;
+    }
+
+    .eye-see-chch .six, .eye-see-chch .two, .eye-see-chch .ten, .the-getaway .two, .the-getaway .four, .white-lies-entertainment .six {
+        padding: 50px 30px;
+        flex-direction: column;
+    }
+
+    .white-lies-entertainment .six img {
+        padding-bottom: 20px;
+    }
+
+    .white-lies-entertainment .seven p {
+        font-size: 1.7rem;
+        width: 50%;
+    }
+
+    .circle {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .columns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .columns div {
+        width: 45%;
+        padding: 60px;
+    }
+
+    .eye-see-chch .six h3, .eye-see-chch .two h3 {
+        text-align: center;
     }
 
     .img {
-        width: 100%;
-        height: 70vw;
-    }
-
-    .text {
-        margin: 200px 30px 100px;
-        width: 50%;
-    }
-
-    .eye-see-chch .three p {
-        width: 50%;
-        position: absolute;
-        margin-top: 75vh;
-        padding: 30px;
-    }
-
-    .eye-see-chch .logo {
-        width: 250px;
-        height: 250px;
-    }
-
-    .logo-1 {
-        margin-top: 100px;
-        right: 80px;
-    }
-
-    .logo-2 {
-        margin-top: 200px;
-        right: 400px;
-    }
-
-    .logo-3 {
-        margin-top: 400px;
-        right: 70px;
-    }
-
-    .menu-logos {
         display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .img img {
+        width: 50%;
+        margin: 0 10px;
+    }
+
+    .the-getaway .eight {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        position: absolute;
-        margin-top: 100vh;
-        background-color: #FADDDD;
-        height: 40vh;
+        flex-direction: row;
     }
 
-    .menu-logos div {
-        width: 200px;
-        height: 200px;
-        background-color: black;
-        border-radius: 50%;
-        background-size: 120px;
-        background-position: center;
-    }
-
-    footer {
-        width: 100%;
-        height: 30vh;
-        display: flex;
-        justify-content: space-between;
-        padding: 30px 60px;
-    }
-
-    .eye-see-chch footer {
-        margin-top: 50vh;
-    }
-
-    footer h3 {
-        font-size: 3rem;
-        text-align: right;
-        width: 80%;
-        float: right;
-    }
-
-    .white-lies h1 {
-        word-wrap: break-word;
-    }
-
-    .white-lies .two .img {
-        background-size: 80%;
-        background-repeat: no-repeat;
-    }
-
-    .small-text {
+    .the-getaway .eight .img {
         width: 50%;
-        font-size: 1.2rem!important;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px
+    }
+
+    .the-getaway .eight .img img {
+        height: 80%;
+        width: auto;
+
+    }
+
+    .bottom-bar {
         padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .the-getaway .one .img {
-        background-size: contain;
-        background-position-y: 0px;
+    .bottom-bar div {
+        width: 100%;
+        padding: 20px 0;
     }
 
-    .the-getaway .two .img {
-        background-size: contain;
-        height: 90vh;
-    }
-
-    .the-getaway .three .img {
-        background-size: contain;
-        height: 90vh;
-    }
-
-    .the-getaway .four .img {
-        background-size: contain;
-        height: 90vh;
-    }
-
-    .the-getaway .five .img {
-        background-size: contain;
-        height: 90vh;
-    }
-
-    .the-getaway .three, .the-getaway .four, .the-getaway .five {
-        background: black;
-        color: white;
+    .bottom-bar div:nth-of-type(2) p {
+        font-size: 4vw;
+        float: right;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        padding: 0 10px;
     }
 
 }
