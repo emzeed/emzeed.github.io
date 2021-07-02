@@ -29,10 +29,10 @@ a {
     text-decoration: none;
 }
 
-nav a:nth-child(2) {
+nav li:nth-child(2) {
     border: #DD7761 solid 2px;
     border-radius: 50%;
-    padding: 10px 10px;
+    padding: 10px 20px;
 }
 
 nav li {
@@ -50,8 +50,23 @@ nav li {
     padding: 10px 30px;
 }
 
+.home .img {
+    background-image: url(assets/orange.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 20px;
+}
+
 .home h3 {
     font-size: 1.3rem;
+}
+
+.about:nth-of-type(1) .img {
+    background-image: url(assets/orange.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .about:nth-of-type(2) div {
@@ -202,6 +217,20 @@ footer a {
         margin: 10px 0;
     }
 
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 70vh;
+    }
+
+    .home div {
+        flex: 1;
+    }
+
+    .home .img {
+        background-position: left;
+    }
+
     .about {
         padding: 30px;
     }
@@ -223,6 +252,11 @@ footer a {
     .about h4 {
         font-size: 1.3rem;
         padding-bottom: 10px;
+    }
+
+    .about .img {
+        margin-top: 20px;
+        height: 300px;
     }
 
     .projects h1 {
@@ -368,7 +402,7 @@ footer a {
 
 }
 
-@media only screen and (min-width: 400px) and (max-width: 700px) {
+@media only screen and (min-width: 400px) and (max-width: 900px) {
 
     nav {
         padding: 30px;
@@ -382,6 +416,22 @@ footer a {
     nav ul li {
         margin: 0 20px;
     }
+    
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 70vh;
+    }
+
+    .home .text {
+        flex: 1;
+    }
+
+    .home .img {
+        background-position: left;
+        flex: 2;
+    }
 
     .about {
         padding: 30px 100px;
@@ -394,6 +444,11 @@ footer a {
     .about p {
         font-size: 1.2rem;
         padding: 10px 0;
+    }
+
+    .about .img {
+        margin-top: 20px;
+        height: 400px;
     }
 
     .projects h1 {
@@ -566,7 +621,7 @@ footer a {
 
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
 
     nav {
         padding: 30px;
